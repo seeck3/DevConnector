@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom';
-import PropTypes from 'prop-types'
 import NotFound from '../layout/NotFound';
 import Register from '../auth/Register';
 import Login from '../auth/Login';
