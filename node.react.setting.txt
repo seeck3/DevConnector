@@ -1,0 +1,48 @@
+Node Set Up
+
+1 - npm init
+    1.1 - entry point: server.js
+    1.2 - license: MIT
+
+2 - npm install or npm i
+    2.1 - express
+    2.2 - express-validator
+    2.3 - bcryptjs
+    2.4 - config
+    2.5 - gravatar
+    2.6 - jsonwebtoken
+    2.7 - mongoose
+    2.8 - request
+
+3 - npm install -D or npm i -D (for dev)
+    3.1 - nodemon
+    3.2 - concurrently
+
+
+React Set Up
+
+4 - npx create-react-app [project name or "client"]
+
+5 - add scripts in server-side package.json to run server and client at same time
+    5.1 - "client": "npm start --prefix client"
+    5.2 - "dev": "concurrently \"npm run server\" \"npm run client\"",
+    5.3 - for deploy "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+
+6 - npm install or npm i  in client folder
+    6.1 - axios
+    6.2 - react-router-dom
+    6.3 - redux
+    6.4 - react-redux
+    6.5 - redux-thunk
+    6.6 - redux-devtools-extension
+    6.7 - uuid
+    6.8 - moment
+    6.9 - react-moment
+
+7 - add proxy in client-side package.json at the end right before close curly bracket
+    7.1 - "proxy": "http://localhost:5000"
+
+8 - delete files in client (if you want)
+    8.1 - delete .gitignore
+    8.2 - README.md
+    8.3 - in client folder rm -rf .git
